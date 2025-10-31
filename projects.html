@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajay K.P - Projects</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Three.js CDN for 3D animation -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+  <style>
+    /* Custom styles for 3D project cards */
+    .project-card {
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navigation -->
+  <nav class="bg-indigo-700 text-white fixed w-full z-50 shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold">Ajay K.P</a>
+      <ul class="flex space-x-6">
+        <li><a href="index.html#home" class="hover:text-indigo-300">Home</a></li>
+        <li><a href="index.html#about" class="hover:text-indigo-300">About</a></li>
+        <li><a href="projects.html" class="hover:text-indigo-300">Projects</a></li>
+        <li><a href="index.html#contact" class="hover:text-indigo-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Header -->
+  <section class="pt-24 pb-12 px-6 text-center">
+    <h1 class="text-4xl font-bold mb-4 text-indigo-900">My Projects</h1>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Explore my projects organized by programming languages and technologies. Click "View Project" to see the live output on localhost.</p>
+  </section>
+
+  <!-- JavaScript Projects -->
+  <section class="max-w-6xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold mb-8 text-indigo-900">JavaScript Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="snake.png" alt="Snake Ladder Game" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Snake Ladder Game</h3>
+        <p class="text-gray-600 mb-4">Interactive snake and ladder game built with JavaScript.</p>
+        <a href="https://ajay-k-p.github.io/SnakeAndLader/" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="tictactoe.png" alt="Tic-Tac-Toe" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Tic-Tac-Toe</h3>
+        <p class="text-gray-600 mb-4">its a game  with JavaScript.</p>
+        <a href="https://ajay-k-p.github.io/tic-tac-toe/" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+    </div>
+  </section>
+  <!-- React Projects -->
+  <section class="max-w-6xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold mb-8 text-indigo-900">React Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="candycrush.png" alt="Fruit Crush" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">fruite crush</h3>
+        <p class="text-gray-600 mb-4">React-based fruite crush game like candy crush.</p>
+        <a href="https://candycrush-drab.vercel.app/" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="memory.png" alt="Todo App" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Todo App</h3>
+        <p class="text-gray-600 mb-4">React-based todo application with state management.</p>
+        <a href="https://brain-jet-nu.vercel.app/" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HTML/CSS Projects -->
+  <section class="max-w-6xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold mb-8 text-indigo-900">HTML/CSS Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="messi.png" alt="Lionel Messi Portfolio" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Lionel Messi Portfolio</h3>
+        <p class="text-gray-600 mb-4">Interactive fan portfolio with stats, gallery, and records.</p>
+        <a href="https://ajay-k-p.github.io/Messi/" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="flappy.png" alt="Flappy Bird" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Flappy Bird</h3>
+        <p class="text-gray-600 mb-4">Flappy Bird is a simple fun game where you control a bird that flies through gaps between pipes. Tap or click to make the bird flap its wings and avoid hitting the pipes. The goal is to go as far as possible and get the highest score.</p>
+        <a href="https://ajay-k-p.github.io/flappybird/" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="sinet.png" alt="Sinet" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Sinet</h3>
+        <p class="text-gray-600 mb-4">It institute website built with HTML and CSS.</p>
+        <a href="https://ajay-k-p.github.io/Sinet.in/" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="bubble.png" alt="Bubble Game" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Bubble game</h3>
+        <p class="text-gray-600 mb-4">its a game of bubble catching</p>
+        <a href="https://ajay-k-p.github.io/game/" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="car.png" alt="Sinet" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Sinet</h3>
+        <p class="text-gray-600 mb-4">It institute website built with HTML and CSS.</p>
+        <a href="https://ajay-k-p.github.io/cargame/" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logo Projects -->
+  <section class="max-w-6xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold mb-8 text-indigo-900">Logo Design Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+        <img src="milma.png" alt="Milma" class="w-full h-32 object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-4 text-indigo-800">Milma</h3>
+        <p class="text-gray-600 mb-4">cow milk brand</p>
+        <a href="milma.png" target="_blank" class="inline-block bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 px-4 rounded-md shadow transition">View Project</a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-indigo-700 text-white text-center py-6 mt-12">
+    <p>© 2025 Ajay K.P – All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Add 3D animation to project cards on hover
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'rotateY(5deg) rotateX(5deg) translateZ(20px)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'rotateY(0deg) rotateX(0deg) translateZ(0px)';
+      });
+    });
+  </script>
+</body>
+</html>
